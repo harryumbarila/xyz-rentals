@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Rentals - Properties</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn">&#9776;</button>
+        </div>
+        <div class="header-center">
+            <h1>XYZ Rentals</h1>
+        </div>
+        <div class="header-right">
+            <i class="user-icon">&#128100;</i>
+        </div>
+    </header>
+    <div class="search-summary">
+        <p>Location: Cartagena de Indias, Colombia</p>
+        <p>Check In: August 8, 2024</p>
+        <p>Check Out: August 15, 2024</p>
+        <p>Guests: 1 Room, 2 Guests</p>
+    </div>
+    <div class="property-list-container">
+        <div class="filters">
+            <button class="disabled">Filter by Amenities</button>
+            <button class="disabled">Filter by Price</button>
+            <button class="disabled">Filter by Proximity</button>
+        </div>
+        <div class="content">
+            <div class="property-list">
+                <div class="property">
+                    <img src="images/property1.jpg" alt="Property Image">
+                    <h3>Hotel Dragon Cartagena</h3>
+                    <p>From $200 USD per night</p>
+                    <p>Rating: 4.5/5</p>
+                    <button class="disabled">View Details</button>
+                    <button onclick="bookNow()">Book Now</button>
+                </div>
+                <div class="property">
+                    <img src="images/property2.jpg" alt="Property Image">
+                    <h3>Hotel Diamond Cartagena</h3>
+                    <p>From $250 USD per night</p>
+                    <p>Rating: 4.7/5</p>
+                    <button class="disabled">View Details</button>
+                    <button onclick="bookNow()">Book Now</button>
+                </div>
+            </div>
+            <div class="map">
+                <h3>Map</h3>
+                <img src="images/mock-map.png" alt="Map">
+                <div class="pin small-pin">Pin 1</div>
+                <div class="pin small-pin">Pin 2</div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <button>Contact Us</button>
+        <button>About Us</button>
+        <div class="social-icons">
+            <i class="social-icon">Facebook</i>
+            <i class="social-icon">Instagram</i>
+            <i class="social-icon">YouTube</i>
+            <i class="social-icon">TikTok</i>
+        </div>
+    </footer>
+    <script>
+        function bookNow() {
+            window.location.href = 'booking-options.html';
+        }
+    </script>
+</body>
+</html>

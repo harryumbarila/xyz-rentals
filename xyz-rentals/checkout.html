@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Rentals - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn">&#9776;</button>
+        </div>
+        <div class="header-center">
+            <h1>XYZ Rentals</h1>
+        </div>
+        <div class="header-right">
+            <i class="user-icon">&#128100;</i>
+        </div>
+    </header>
+    <div class="search-summary">
+        <p>Location: Cartagena de Indias, Colombia</p>
+        <p>Check In: August 8, 2024</p>
+        <p>Check Out: August 15, 2024</p>
+        <p>Guests: 1 Room, 2 Guests</p>
+    </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar">
+            <div class="progress" style="width: 50%;"></div>
+            <div class="steps">
+                <span>Room and Rates</span>
+                <span>Add Ons</span>
+                <span>Checkout</span>
+                <span>Confirmation</span>
+            </div>
+        </div>
+    </div>
+    <div class="checkout-container">
+        <div class="form">
+            <h3>Guest Information</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="nationality">Nationality</label>
+                    <input type="text" id="nationality">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="residence">Residence</label>
+                    <input type="text" id="residence">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="reason">Reason for Visit</label>
+                    <input type="text" id="reason">
+                </div>
+            </div>
+            <h3>Payment Information</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number">
+                </div>
+                <div class="form-group">
+                    <label for="card-name">Cardholder Name</label>
+                    <input type="text" id="card-name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="expiry-date">Expiration Date (MM/YY)</label>
+                    <input type="text" id="expiry-date">
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv">
+                </div>
+            </div>
+            <button class="cta-btn" onclick="completeBooking()">Complete Booking</button>
+        </div>
+        <div class="summary">
+            <h3>Your Stay</h3>
+            <p>Check In: August 8, 2024</p>
+            <p>Check Out: August 15, 2024</p>
+            <p>Room: Superior</p>
+            <p>Total: $2865 USD</p>
+            <h3>Cancellation Policy</h3>
+            <p>Free cancellation until August 4, 2024</p>
+            <p>For each night booked, XYZ Rentals will donate up to 2 trees to restore our planet with Tree-Nation.</p>
+            <h3>Accepted Cards</h3>
+            <div class="card-icons">
+                <i>Visa</i>
+                <i>MasterCard</i>
+                <i>Amex</i>
+            </div>
+            <h3>Policies</h3>
+            <button class="cta-btn">View Cancellation Policy</button>
+            <button class="cta-btn">View Refund Policy</button>
+            <button class="cta-btn">View Stay Menu</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <button>Contact Us</button>
+        <button>About Us</button>
+        <div class="social-icons">
+            <i class="social-icon">Facebook</i>
+            <i class="social-icon">Instagram</i>
+            <i class="social-icon">YouTube</i>
+            <i class="social-icon">TikTok</i>
+        </div>
+    </footer>
+    <script>
+        function completeBooking() {
+            window.location.href = 'confirmation.html';
+        }
+    </script>
+</body>
+</html>

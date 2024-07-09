@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Rentals - Booking Options</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn">&#9776;</button>
+        </div>
+        <div class="header-center">
+            <h1>XYZ Rentals</h1>
+        </div>
+        <div class="header-right">
+            <i class="user-icon">&#128100;</i>
+        </div>
+    </header>
+    <div class="search-summary">
+        <p>Location: Cartagena de Indias, Colombia</p>
+        <p>Check In: August 8, 2024</p>
+        <p>Check Out: August 15, 2024</p>
+        <p>Guests: 1 Room, 2 Guests</p>
+    </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar">
+            <div class="progress" style="width: 25%;"></div>
+            <div class="steps">
+                <span>Room and Rates</span>
+                <span>Add Ons</span>
+                <span>Checkout</span>
+                <span>Confirmation</span>
+            </div>
+        </div>
+    </div>
+    <div class="booking-options-container">
+        <div class="booking-options">
+            <div class="option">
+                <h3>Superior Room</h3>
+                <p>1 King or 2 Twin Beds</p>
+                <p>From $409 USD per night</p>
+                <button class="cta-btn" onclick="selectOption()">Select</button>
+            </div>
+            <div class="option">
+                <h3>Luxury King</h3>
+                <p>1 King Bed</p>
+                <p>From $450 USD per night</p>
+                <button class="cta-btn" onclick="selectOption()">Select</button>
+            </div>
+        </div>
+        <div class="summary">
+            <h3>Your Stay</h3>
+            <p>Check In: August 8, 2024</p>
+            <p>Check Out: August 15, 2024</p>
+            <p>Room: Superior</p>
+            <p>Total: $2865 USD</p>
+            <button class="cta-btn">Edit</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <button>Contact Us</button>
+        <button>About Us</button>
+        <div class="social-icons">
+            <i class="social-icon">Facebook</i>
+            <i class="social-icon">Instagram</i>
+            <i class="social-icon">YouTube</i>
+            <i class="social-icon">TikTok</i>
+        </div>
+    </footer>
+    <script>
+        function selectOption() {
+            window.location.href = 'checkout.html';
+        }
+    </script>
+</body>
+</html>

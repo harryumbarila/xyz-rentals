@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Rentals - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn">&#9776;</button>
+        </div>
+        <div class="header-center">
+            <h1>XYZ Rentals</h1>
+        </div>
+        <div class="header-right">
+            <i class="user-icon">&#128100;</i>
+        </div>
+    </header>
+    <div class="hero" style="background-image: url('images/nature-hotel.jpg');">
+        <div class="booking-form">
+            <h3 style="color: black;">Book Your Stay</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="location" style="color: black;">Location</label>
+                    <input type="text" id="location" placeholder="Where would you like to go?">
+                </div>
+                <div class="form-group">
+                    <label for="check-in" style="color: black;">Check In</label>
+                    <input type="date" id="check-in">
+                </div>
+                <div class="form-group">
+                    <label for="check-out" style="color: black;">Check Out</label>
+                    <input type="date" id="check-out">
+                </div>
+                <div class="form-group">
+                    <label for="guests" style="color: black;">Guests</label>
+                    <select id="guests">
+                        <option value="1">1 Room, 1 Guest</option>
+                        <option value="2">1 Room, 2 Guests</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="searchProperties()">Search</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <button>Contact Us</button>
+        <button>About Us</button>
+        <div class="social-icons">
+            <i class="social-icon">Facebook</i>
+            <i class="social-icon">Instagram</i>
+            <i class="social-icon">YouTube</i>
+            <i class="social-icon">TikTok</i>
+        </div>
+    </footer>
+    <script>
+        function searchProperties() {
+            window.location.href = 'properties.html';
+        }
+    </script>
+</body>
+</html>

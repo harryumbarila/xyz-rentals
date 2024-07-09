@@ -1,0 +1,445 @@
+/* General Styles */
+body {
+    font-family: 'Clearface Serial Regular', serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333; /* Dark Gray */
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Avenir LT 85 Heavy', sans-serif;
+}
+
+.header-center h1 {
+    margin: 0;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.user-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.booking-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    margin: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.booking-form button {
+    background-color: #E9C46A;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Search Summary */
+.search-summary {
+    background-color: #EEE;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Property List Container */
+.property-list-container {
+    padding: 20px;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    background-color: #CCC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: not-allowed;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.property-list {
+    width: 100%;
+}
+
+.property {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.property img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.property button {
+    background-color: #E9C46A;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.property button.disabled {
+    background-color: #CCC;
+    cursor: not-allowed;
+}
+
+.map {
+    width: 100%;
+    background-color: #EEE;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.map img {
+    width: 100%;
+}
+
+.map h3 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.pin {
+    background-color: red;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+.pin.small-pin {
+    width: 8px;
+    height: 8px;
+}
+
+.pin:nth-child(4) {
+    top: 40%;
+    left: 60%;
+}
+
+.pin:nth-child(5) {
+    top: 70%;
+    left: 20%;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.progress-bar {
+    width: 80%;
+    background-color: #DDD;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 20px;
+    background-color: #E9C46A;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 0 10px;
+    font-size: 12px;
+    height: 20px;
+    align-items: center;
+}
+
+/* Booking Options Container */
+.booking-options-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.booking-options {
+    width: 100%;
+}
+
+.option {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.option button {
+    background-color: #E9C46A;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.summary {
+    width: 100%;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Checkout Container */
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    margin: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-icons i {
+    margin-right: 10px;
+}
+
+.summary .cta-btn {
+    background-color: #E9C46A;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Confirmation Container */
+.confirmation-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.confirmation {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.footer {
+    background-color: #333333; /* Dark Gray */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Avenir LT 85 Heavy', sans-serif;
+}
+
+.footer button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 720px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .property-list, .map {
+        width: 100%;
+    }
+
+    .booking-options, .summary {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .summary {
+        width: 100%;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1280px), 
+       (min-width: 1281px) and (max-width: 1440px), 
+       (min-width: 1441px) and (max-width: 1920px), 
+       (min-width: 1921px) and (max-width: 2560px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .property-list, .map {
+        width: 50%;
+    }
+
+    .booking-options, .summary {
+        width: 45%;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    .summary {
+        width: 35%;
+    }
+}
+
+@media (min-width: 2561px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .property-list, .map {
+        width: 50%;
+    }
+
+    .booking-options, .summary {
+        width: 45%;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    .summary {
+        width: 35%;
+    }
+}
