@@ -26,37 +26,31 @@
         <p>Check Out: August 15, 2024</p>
         <p>Guests: 1 Room, 2 Guests</p>
     </div>
-    <div class="property-list-container">
-        <div class="filters">
-            <button class="disabled">Filter by Amenities</button>
-            <button class="disabled">Filter by Price</button>
-            <button class="disabled">Filter by Proximity</button>
+    <div class="filters">
+        <button disabled>Filters</button>
+    </div>
+    <div class="content">
+        <div class="property-list">
+            <div class="property">
+                <h3>Hotel Dragon Cartagena</h3>
+                <img src="images/property1.jpg" alt="Hotel Dragon Cartagena">
+                <p>From $150/night</p>
+                <button class="disabled">View Details</button>
+                <button class="cta-btn" onclick="bookNow()">Book Now</button>
+            </div>
+            <div class="property">
+                <h3>Hotel Diamond Cartagena</h3>
+                <img src="images/property2.jpg" alt="Hotel Diamond Cartagena">
+                <p>From $200/night</p>
+                <button class="disabled">View Details</button>
+                <button class="cta-btn" onclick="bookNow()">Book Now</button>
+            </div>
         </div>
-        <div class="content">
-            <div class="property-list">
-                <div class="property">
-                    <img src="images/property1.jpg" alt="Property Image">
-                    <h3>Hotel Dragon Cartagena</h3>
-                    <p>From $200 USD per night</p>
-                    <p>Rating: 4.5/5</p>
-                    <button class="disabled">View Details</button>
-                    <button onclick="bookNow()">Book Now</button>
-                </div>
-                <div class="property">
-                    <img src="images/property2.jpg" alt="Property Image">
-                    <h3>Hotel Diamond Cartagena</h3>
-                    <p>From $250 USD per night</p>
-                    <p>Rating: 4.7/5</p>
-                    <button class="disabled">View Details</button>
-                    <button onclick="bookNow()">Book Now</button>
-                </div>
-            </div>
-            <div class="map">
-                <h3>Map</h3>
-                <img src="images/mock-map.png" alt="Map">
-                <div class="pin small-pin">Pin 1</div>
-                <div class="pin small-pin">Pin 2</div>
-            </div>
+        <div class="map">
+            <h3>Map</h3>
+            <img src="images/mock-map.png" alt="Map">
+            <div class="pin small-pin" style="top: 40%; left: 60%;"></div>
+            <div class="pin small-pin" style="top: 70%; left: 20%;"></div>
         </div>
     </div>
     <footer class="footer">
