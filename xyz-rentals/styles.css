@@ -18,6 +18,11 @@ body {
     font-family: 'Avenir LT 85 Heavy', sans-serif;
 }
 
+.header-center a {
+    text-decoration: none;
+    color: white;
+}
+
 .header-center h1 {
     margin: 0;
 }
