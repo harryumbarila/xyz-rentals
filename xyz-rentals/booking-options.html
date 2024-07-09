@@ -12,7 +12,9 @@
             <button class="menu-btn">&#9776;</button>
         </div>
         <div class="header-center">
-            <h1>XYZ Rentals</h1>
+            <a href="index.html">
+                <h1>XYZ Rentals</h1>
+            </a>
         </div>
         <div class="header-right">
             <i class="user-icon">&#128100;</i>
@@ -39,24 +41,22 @@
         <div class="booking-options">
             <div class="option">
                 <h3>Superior Room</h3>
-                <p>1 King or 2 Twin Beds</p>
-                <p>From $409 USD per night</p>
-                <button class="cta-btn" onclick="selectOption()">Select</button>
+                <p>25 sqm, King or Twin Beds, includes breakfast</p>
+                <button onclick="selectOption()">Select</button>
             </div>
             <div class="option">
                 <h3>Luxury King</h3>
-                <p>1 King Bed</p>
-                <p>From $450 USD per night</p>
-                <button class="cta-btn" onclick="selectOption()">Select</button>
+                <p>40 sqm, King Bed, includes breakfast and access to lounge</p>
+                <button onclick="selectOption()">Select</button>
             </div>
         </div>
         <div class="summary">
             <h3>Your Stay</h3>
             <p>Check In: August 8, 2024</p>
             <p>Check Out: August 15, 2024</p>
-            <p>Room: Superior</p>
-            <p>Total: $2865 USD</p>
-            <button class="cta-btn">Edit</button>
+            <p>Room: Not Selected</p>
+            <p>Total: $0 USD</p>
+            <button class="cta-btn" onclick="editStay()">Edit</button>
         </div>
     </div>
     <footer class="footer">
@@ -72,6 +72,9 @@
     <script>
         function selectOption() {
             window.location.href = 'checkout.html';
+        }
+        function editStay() {
+            // Edit stay functionality
         }
     </script>
 </body>
