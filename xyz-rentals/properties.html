@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XYZ Rentals - Home</title>
+    <title>XYZ Rentals - Properties</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,31 +20,43 @@
             <i class="user-icon">&#128100;</i>
         </div>
     </header>
-    <div class="hero" style="background-image: url('images/nature-hotel.jpg');">
-        <div class="booking-form">
-            <h3 style="color: black;">Book Your Stay</h3>
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="location" style="color: black;">Location</label>
-                    <input type="text" id="location" placeholder="Where would you like to go?">
+    <div class="search-summary">
+        <p>Location: Cartagena de Indias, Colombia</p>
+        <p>Check In: August 8, 2024</p>
+        <p>Check Out: August 15, 2024</p>
+        <p>Guests: 1 Room, 2 Guests</p>
+    </div>
+    <div class="property-list-container">
+        <div class="filters">
+            <button class="disabled">Filter by Amenities</button>
+            <button class="disabled">Filter by Price</button>
+            <button class="disabled">Filter by Proximity</button>
+        </div>
+        <div class="content">
+            <div class="property-list">
+                <div class="property">
+                    <img src="images/property1.jpg" alt="Property Image">
+                    <h3>Hotel Dragon Cartagena</h3>
+                    <p>From $200 USD per night</p>
+                    <p>Rating: 4.5/5</p>
+                    <button class="disabled">View Details</button>
+                    <button onclick="bookNow()">Book Now</button>
                 </div>
-                <div class="form-group">
-                    <label for="check-in" style="color: black;">Check In</label>
-                    <input type="date" id="check-in">
-                </div>
-                <div class="form-group">
-                    <label for="check-out" style="color: black;">Check Out</label>
-                    <input type="date" id="check-out">
-                </div>
-                <div class="form-group">
-                    <label for="guests" style="color: black;">Guests</label>
-                    <select id="guests">
-                        <option value="1">1 Room, 1 Guest</option>
-                        <option value="2">1 Room, 2 Guests</option>
-                    </select>
+                <div class="property">
+                    <img src="images/property2.jpg" alt="Property Image">
+                    <h3>Hotel Diamond Cartagena</h3>
+                    <p>From $250 USD per night</p>
+                    <p>Rating: 4.7/5</p>
+                    <button class="disabled">View Details</button>
+                    <button onclick="bookNow()">Book Now</button>
                 </div>
             </div>
-            <button onclick="searchProperties()">Search</button>
+            <div class="map">
+                <h3>Map</h3>
+                <img src="images/mock-map.png" alt="Map">
+                <div class="pin small-pin">Pin 1</div>
+                <div class="pin small-pin">Pin 2</div>
+            </div>
         </div>
     </div>
     <footer class="footer">
@@ -58,8 +70,8 @@
         </div>
     </footer>
     <script>
-        function searchProperties() {
-            window.location.href = 'properties.html';
+        function bookNow() {
+            window.location.href = 'booking-options.html';
         }
     </script>
 </body>
